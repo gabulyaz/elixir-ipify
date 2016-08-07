@@ -1,0 +1,2 @@
+defmodule ElixirIpify do
+end
