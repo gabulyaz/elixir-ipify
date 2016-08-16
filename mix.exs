@@ -17,6 +17,25 @@ defmodule ElixirIpify.Mixfile do
     [applications: [:logger,:httpotion]]
   end
 
+  defp description do
+   """
+   A simple elixir library for ipify: A Simple IP Address API.
+   """
+  end
+
+  defp package do
+  [# These are the default files included in the package
+   name: :elixir_ipify,
+   files: ["lib", "test", "config", "mix.exs", "readme.md", "license"],
+   maintainers: ["Zoltán Gabulya"],
+   licenses: ["The MIT License (MIT)"],
+   links: %{"GitHub" => "https://github.com/gabulyaz/elixir-ipify"}
+  ]
+  end
+
+
+
+
   # Dependencies can be Hex packages:
   #
   #   {:mydep, "~> 0.3.0"}

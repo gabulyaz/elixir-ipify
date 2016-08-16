@@ -8,6 +8,11 @@ defmodule ElixirIpify do
 
   @ipify_uri "https://api.ipify.org"
 
+  def get(uri \\ @ipify_uri) do
+    HTTPotion.get(uri,headers: @user_agent)
+    |> handle_response
+  end
+
   def fetch(uri \\ @ipify_uri) do
     HTTPotion.get(uri,headers: @user_agent)
     |> handle_response

@@ -1,8 +1,9 @@
 # ElixirIpify
 
-**TODO: Add description**
+A simple elixir library for [ipify]("https://www.ipify.org"):
+_A Simple IP Address API._
 
-## Installation
+## Usage
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
 
@@ -13,12 +14,31 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
       [{:elixir_ipify, "~> 0.1.0"}]
     end
     ```
+  2. Open your interactive elixir shell:
 
-  2. Ensure `elixir_ipify` is started before your application:
+    ```bash
+    $ iex -S mix
+    ```
+  3. Try the functions:
 
-    ```elixir
-    def application do
-      [applications: [:elixir_ipify]]
-    end
+    ```code
+    iex()> ElixirIpify.fetch
+    "1.2.3.4" # if success
+
+    iex()> ElixirIpify.fetch
+    "Nothing goes wrong!" # if error
     ```
 
+  4. You can get also elixir style response:
+
+      ```code
+      iex()> ElixirIpify.get
+      {:ok, "1.2.3.4"} # if success
+
+      iex()> ElixirIpify.get
+      {:error, "Nothing goes wrong!"} # if error
+      ```
+
+## License
+
+MIT &copy; Zoltán Gabulya
