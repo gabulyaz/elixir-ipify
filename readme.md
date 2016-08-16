@@ -9,21 +9,32 @@ _A Simple IP Address API._
 
 ## Usage
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+If [available in Hex](https://hex.pm/packages/elixir_ipify), the package can be installed as:
 
   1. Add `elixir_ipify` to your list of dependencies in `mix.exs`:
 
     ```elixir
     def deps do
-      [{:elixir_ipify, "~> 0.1.0"}]
+      [{:elixir_ipify, "~> 0.1.0"},
+       {:httpotion, "~> 3.0.0"}]
+    end
+
+    def application do
+      [applications: [:logger,:elixir_ipify]]
     end
     ```
-  2. Open your interactive elixir shell:
+  2. Run the mix command:
+
+    ```bash
+    $ mix deps.get
+    ```
+
+  3. Open your interactive elixir shell:
 
     ```bash
     $ iex -S mix
     ```
-  3. Try the functions:
+  4. Try the functions:
 
     ```code
     iex()> ElixirIpify.fetch
@@ -33,7 +44,7 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
     "Nothing goes wrong!" # if error
     ```
 
-  4. You can get also elixir style response:
+  5. You can get also elixir style response:
 
       ```code
       iex()> ElixirIpify.get
