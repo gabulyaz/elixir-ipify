@@ -1,9 +1,7 @@
 # ElixirIpify
 
 [![Build Status](https://travis-ci.org/gabulyaz/elixir-ipify.svg?branch=master)](https://travis-ci.org/gabulyaz/elixir-ipify)
-
 [![Issue Count](https://codeclimate.com/github/gabulyaz/elixir-ipify/badges/issue_count.svg)](https://codeclimate.com/github/gabulyaz/elixir-ipify)
-
 [![Test Coverage](https://codeclimate.com/github/gabulyaz/elixir-ipify/badges/coverage.svg)](https://codeclimate.com/github/gabulyaz/elixir-ipify/coverage)
 
 A simple elixir library for [ipify]("https://www.ipify.org"):
