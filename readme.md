@@ -12,7 +12,7 @@ _A Simple IP Address API._
 
 ## Usage
 
-If [available in Hex](https://hex.pm/packages/elixir_ipify), the package can be installed as:
+ElixirIpify is [available in Hex](https://hex.pm/packages/elixir_ipify), the package can be installed as:
 
   1. Add `elixir_ipify` to your list of dependencies in `mix.exs`:
 
