@@ -3,6 +3,9 @@
 [![Build Status](https://travis-ci.org/gabulyaz/elixir-ipify.svg?branch=master)](https://travis-ci.org/gabulyaz/elixir-ipify)
 [![Issue Count](https://codeclimate.com/github/gabulyaz/elixir-ipify/badges/issue_count.svg)](https://codeclimate.com/github/gabulyaz/elixir-ipify)
 [![Test Coverage](https://codeclimate.com/github/gabulyaz/elixir-ipify/badges/coverage.svg)](https://codeclimate.com/github/gabulyaz/elixir-ipify/coverage)
+[![Hex.pm](https://img.shields.io/hexpm/dw/elixir_ipify.svg?maxAge=2592000)]()
+[![Hex.pm](https://img.shields.io/hexpm/v/elixir_ipify.svg?maxAge=2592000)]()
+
 
 A simple elixir library for [ipify]("https://www.ipify.org"):
 _A Simple IP Address API._
