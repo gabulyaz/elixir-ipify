@@ -7,7 +7,10 @@ defmodule ElixirIpify.Mixfile do
      elixir: "~> 1.3",
      build_embedded: Mix.env == :prod,
      start_permanent: Mix.env == :prod,
-     deps: deps()]
+     description: description(),
+     deps: deps(),
+     package: package()
+    ]
   end
 
   # Configuration for the OTP application
@@ -29,12 +32,9 @@ defmodule ElixirIpify.Mixfile do
    files: ["lib", "test", "config", "mix.exs", "readme.md", "license"],
    maintainers: ["Zoltán Gabulya"],
    licenses: ["The MIT License (MIT)"],
-   links: %{"GitHub" => "https://github.com/gabulyaz/elixir-ipify"}
+   links: %{"GitHub" => "https://github.com/gabulyaz/elixir-ipify"},
   ]
   end
-
-
-
 
   # Dependencies can be Hex packages:
   #
@@ -46,6 +46,8 @@ defmodule ElixirIpify.Mixfile do
   #
   # Type "mix help deps" for more examples and options
   defp deps do
-    [{:httpotion, "~> 3.0.0"}]
+    [{:httpotion, "~> 3.0.0"},
+      {:ex_doc, ">= 0.0.0"}
+    ]
   end
 end
