@@ -1,4 +1,4 @@
-hdefmodule ElixirIpifyTest do
+defmodule ElixirIpifyTest do
   use ExUnit.Case
   doctest ElixirIpify
 
