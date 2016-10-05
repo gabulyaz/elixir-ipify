@@ -1,4 +1,4 @@
-defmodule ElixirIpifyTest do
+hdefmodule ElixirIpifyTest do
   use ExUnit.Case
   doctest ElixirIpify
 
@@ -13,7 +13,7 @@ defmodule ElixirIpifyTest do
 
     test "handle_response function :error" do
       assert ElixirIpify.handle_response(
-        %{message: ""}) == {:error, "Nothing goes wrong!"}
+        %{message: ""}) == {:error, "Something gone wrong!"}
     end
 
     test "fetch function success" do
