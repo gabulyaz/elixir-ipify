@@ -23,7 +23,7 @@ defmodule ElixirIpifyTest do
 
     test "fetch function failed" do
       assert ElixirIpify.fetch("host.local") ==
-        "Nothing goes wrong!"
+        "Something gone wrong!"
     end
 
 end
