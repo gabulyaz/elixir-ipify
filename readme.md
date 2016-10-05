@@ -7,7 +7,7 @@
 [![Hex.pm](https://img.shields.io/hexpm/v/elixir_ipify.svg?maxAge=2592000)]()
 
 
-A simple elixir library for [ipify]("https://www.ipify.org"):
+A simple elixir library for [ipify](https://www.ipify.org):
 _A Simple IP Address API._
 
 ## Usage

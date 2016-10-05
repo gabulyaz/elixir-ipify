@@ -22,7 +22,7 @@ defmodule ElixirIpify do
   def handle_response(%{body: body, status_code: 200}),
     do: {:ok,body}
   def handle_response(___),
-    do: {:error,"Nothing goes wrong!"}
+    do: {:error,"Something gone wrong!"}
 
   def print_out(t) do
     elem(t,1)
